@@ -6,6 +6,12 @@
   "scripts": {
     "start": "node src/app.js",
     "test": "jest"
+    
+  },
+  "jest": {
+    "setupFiles": [
+      "./jest/setEnvVars.js"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -19,6 +25,6 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "supertest": "^6.3.3"
+    "supertest": "^6.3.4"
   }
 }
